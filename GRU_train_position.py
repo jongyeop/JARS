@@ -6,7 +6,7 @@ from sklearn.metrics import f1_score
 import sys
 import time
 import math
-import torch
+import torch   
 import pandas_datareader as web
 import pandas  as pd
 import pymysql
@@ -83,8 +83,8 @@ if __name__ == '__main__':
         return Tr_Dx, Tr_Lx
     #--------------------------------------------------#
     #--------------------------------------------------#
-    #  1000 - 1200 ; Normal Condition
-    #  2500 - 2700 ; Training Position
+    #  700 - 800 ; Normal Condition
+    #  3000 - 3100 ; Training Position
     #------( Training Data )---------------------------------#
     s_Ch = 700  ; e_Ch=750 ; Lb =0
     Tr_D, Tr_L = Data_parapration(s_Ch, e_Ch, Tr_D, Tr_L, Lb)
